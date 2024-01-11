@@ -10,7 +10,7 @@ public class TestBinarySearch {
 		RandomAccessFile  r2;
 		FileWriter fichero = null;
 		PrintWriter pw = null;
-		ContenedorDeEnteros a = new BinarySearch();
+		BinarySearch a = new BinarySearch();
 		// 4 bytes int  cada registro  
 	try {
 			
