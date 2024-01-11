@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * de un árbol binario de búsqueda en memoria dinámica sin operaciones 
  * de reequilibrado y sin elementos repetidos
  */
-public class ContenedorDeEnteros {
+public class BinarySearch {
 	protected int numElem;
 	private NodoBinario nodoRaiz;
 	
@@ -33,7 +33,7 @@ public class ContenedorDeEnteros {
 	/**
 	 * Constructor vacio
 	 */
-	public ContenedorDeEnteros() {
+	public BinarySearch() {
 		this.nodoRaiz = null;
 		this.numElem = 0;
 	}
