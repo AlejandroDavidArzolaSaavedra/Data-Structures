@@ -5,19 +5,18 @@ import java.io.RandomAccessFile;
 
 /**
  * Clase para realizar pruebas al contenedor (Arbol b)
- * @author ASA, SCR, PMQ, ADAS, IRR, ASN
- * @date 13/05/2022
+ * @author Alejandro David Arzola Saavedra
  */
-public class PruebaContenedor {
+public class TestBTree {
 	public static void main(String[] args) {
 		
-		ContenedorDeEnteros a;		
+		BTree a;		
 		// Comienzo de las pruebas de funcionamiento y las de rendimiento
 		RandomAccessFile  r;
 		RandomAccessFile  r2;
 		FileWriter fichero = null;
 		PrintWriter pw = null;
-		a = new ContenedorDeEnteros();
+		a = new BTree();
 		int[] contenedor = new int[100000];
 		int[] contenedor_no = new int[20000];
 		
