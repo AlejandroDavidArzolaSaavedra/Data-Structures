@@ -6,7 +6,7 @@ import java.io.*;
  * @date 21/02/2022
  */
 
-public class PruebaContenedor {
+public class TestLinkedList {
 	public static void main(String[] args) {
 		RandomAccessFile  r;
 		RandomAccessFile  r2;
