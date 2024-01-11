@@ -7,7 +7,7 @@ import java.util.Stack;
  * que no admite repetidos, usando de almacenamiento memoria secundaria
  * 
  */
-public class ContenedorDeEnteros {
+public class BTree {
 	private int raiz;
 	private int numElem;
 	private int Orden;
@@ -18,7 +18,7 @@ public class ContenedorDeEnteros {
 	/**
 	 * Constructor del contenedor
 	 */
-	public ContenedorDeEnteros() {
+	public BTree() {
 		fichero = new FicheroAyuda();
 	}
 	
