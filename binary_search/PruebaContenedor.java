@@ -2,16 +2,15 @@ package practica3;
 import java.io.*;
 /**
  * Clase para realizar pruebas al contenedor lineal (Arbol binario de busqueda)
- * @author SCR, PMQ, IRR, ASA, ASN, ADAS
- * @date 4/04/2022
+ * @author Alejandro David Arzola Saavedra
  */
-public class PruebaContenedor {
+public class TestBinarySearch {
 	public static void main(String[] args) {
 		RandomAccessFile  r;
 		RandomAccessFile  r2;
 		FileWriter fichero = null;
 		PrintWriter pw = null;
-		ContenedorDeEnteros a = new ContenedorDeEnteros();
+		ContenedorDeEnteros a = new BinarySearch();
 		// 4 bytes int  cada registro  
 	try {
 			
