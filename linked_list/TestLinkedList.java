@@ -11,7 +11,7 @@ public class TestLinkedList {
 		RandomAccessFile  r2;
 		FileWriter fichero = null;
 		PrintWriter pw = null;
-		ContenedorDeEnteros a = new LinkedList();
+		LinkedList a = new LinkedList();
 		
 		// 4 bytes int  cada registro  
 		try {
