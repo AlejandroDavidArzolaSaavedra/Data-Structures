@@ -10,7 +10,7 @@ public class TestOrderedSequence {
 		RandomAccessFile  r2;
 		FileWriter fichero = null;
 		PrintWriter pw = null;
-		ContenedorDeEnteros a = new orderedSequence(100000);
+		orderedSequence a = new orderedSequence(100000);
 		// 4 bytes int  cada registro  
 		try {
 			
