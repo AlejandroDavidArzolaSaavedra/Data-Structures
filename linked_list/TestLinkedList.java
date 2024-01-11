@@ -2,8 +2,7 @@ package practica1;
 import java.io.*;
 /**
  * Clase para realizar pruebas al contenedor lineal
- * @authors IRR, SCR, PMQ, ADAS, ASA, ASN
- * @date 21/02/2022
+ * @author: Alejandro David Arzola Saavedra
  */
 
 public class TestLinkedList {
