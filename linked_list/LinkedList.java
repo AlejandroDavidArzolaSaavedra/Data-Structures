@@ -28,7 +28,7 @@ public class LinkedList {
 	/**
 	 * Constructor vacio
 	 */
-	public ContenedorDeEnteros() {
+	public LinkedList() {
 		this.len = 0;
 		this.first = null;
 	}
