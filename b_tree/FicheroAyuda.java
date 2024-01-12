@@ -5,11 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-/**
- * 
- * @author Jose PÈrez basado en Juan Carlos RodrÌguez
- *
- */
 public class FicheroAyuda {
 	
     public static class ExcepcionFichero extends RuntimeException {
@@ -29,10 +24,10 @@ public class FicheroAyuda {
         }
     }
     
-    private int numeroAdjuntos; //N˙mero de datos enteros aÒadidos
-    private int listaVacÌas;    //Lista de p·ginas vacÌas
+    private int numeroAdjuntos; //N√∫mero de datos enteros a√±adidos
+    private int listaVac√≠as;    //Lista de p√°ginas vac√≠as
     private int desplazamiento; //Inicio de datos cliente
-    private int tamaÒoP·gina;   //TamaÒo de cada p·gina
+    private int tama√±oP√°gina;   //Tama√±o de cada p√°gina
     private int adjuntos[];     //Datos adjuntos al fichero
     private RandomAccessFile fichero;
     private String nombre;
@@ -43,8 +38,8 @@ public class FicheroAyuda {
      * Crea un fichero con adjuntos y lo asocia al objeto actual.
      * Puede producir ExcepcionFichero.
      * @param nombre Ruta del fichero
-     * @param lp TamaÒo de p·gina = n˙mero de bytes de los registros
-     * @param adj N˙mero de adjuntos, cada uno de los cuales ser· un int, numerados de 0 a adj-1.
+     * @param lp Tama√±o de p√°gina = n√∫mero de bytes de los registros
+     * @param adj N√∫mero de adjuntos, cada uno de los cuales ser√° un int, numerados de 0 a adj-1.
      */
     public void crear(String nombre, int lp, int adj){
         cerrar();
@@ -58,14 +53,14 @@ public class FicheroAyuda {
         } catch (FileNotFoundException e) {
             throw new ExcepcionFichero(e);
         }
-        tamaÒoP·gina=lp;
+        tama√±oP√°gina=lp;
         numeroAdjuntos=adj;
-        listaVacÌas=dirNula;
+        listaVac√≠as=dirNula;
         desplazamiento=(3+numeroAdjuntos)*Conversor.INTBYTES;
         posicionarInterno(0);
-        escribirInterno(Conversor.aByte(tamaÒoP·gina));
+        escribirInterno(Conversor.aByte(tama√±oP√°gina));
         escribirInterno(Conversor.aByte(numeroAdjuntos));
-        escribirInterno(Conversor.aByte(listaVacÌas));
+        escribirInterno(Conversor.aByte(listaVac√≠as));
         if(numeroAdjuntos>0) { //Escribimos los adjuntos en el fichero
            adjuntos = new int[numeroAdjuntos];
            for(int i=0;  i<numeroAdjuntos;i++){
@@ -78,13 +73,13 @@ public class FicheroAyuda {
      * Crea un fichero sin adjuntos y lo asocia al objeto actual.
      * Puede producir ExcepcionFichero.
      * @param nombre Ruta del fichero
-     * @param lp TamaÒo de p·gina = n˙mero de bytes de los registros
+     * @param lp Tama√±o de p√°gina = n√∫mero de bytes de los registros
      */
     public void crear(String nombre, int lp){
         crear(nombre,lp,0);
     }
     /**
-     * Abre un fichero de p·ginas reutilizables que puede tener adjuntos y lo asocia al objeto actual.
+     * Abre un fichero de p√°ginas reutilizables que puede tener adjuntos y lo asocia al objeto actual.
      * Puede producir ExcepcionFichero.
      * @param nombre Ruta del fichero
      */
@@ -97,12 +92,12 @@ public class FicheroAyuda {
             throw new ExcepcionFichero(e);
         }
         
-        if(tamaÒoByte()<Conversor.INTBYTES*2)
+        if(tama√±oByte()<Conversor.INTBYTES*2)
             throw new ExcepcionFichero("Error al abrir el fichero");
         posicionarInterno(0);
-        tamaÒoP·gina=Conversor.aInt(leerInterno(Conversor.INTBYTES));
+        tama√±oP√°gina=Conversor.aInt(leerInterno(Conversor.INTBYTES));
         numeroAdjuntos=Conversor.aInt(leerInterno(Conversor.INTBYTES));
-        listaVacÌas=Conversor.aInt(leerInterno(Conversor.INTBYTES));
+        listaVac√≠as=Conversor.aInt(leerInterno(Conversor.INTBYTES));
         if(numeroAdjuntos>0) {
             adjuntos = new int[numeroAdjuntos];
             for(int i=0;  i<numeroAdjuntos;i++){
@@ -126,39 +121,39 @@ public class FicheroAyuda {
         }
     }
     /**
-     * Reserva una p·gina para un registro, reutilizando las liberadas.
+     * Reserva una p√°gina para un registro, reutilizando las liberadas.
      * Puede producir ExcepcionFichero.
-     * @return La direcciÛn de la p·gina, si no se produce excepciÛn
+     * @return La direcci√≥n de la p√°gina, si no se produce excepci√≥n
      */
-    public int tomarP·gina() {
-        if(listaVacÌas==-1) 
-            return (int)tamaÒo();
-         int pnueva=listaVacÌas;
-         posicionar(listaVacÌas);
+    public int tomarP√°gina() {
+        if(listaVac√≠as==-1) 
+            return (int)tama√±o();
+         int pnueva=listaVac√≠as;
+         posicionar(listaVac√≠as);
          try {
-        	 listaVacÌas=fichero.readInt();
+        	 listaVac√≠as=fichero.readInt();
          } catch (IOException e) {
              throw new ExcepcionFichero(e);
          }
          posicionarInterno(2*Conversor.INTBYTES);
-         escribirInterno(Conversor.aByte(listaVacÌas));
+         escribirInterno(Conversor.aByte(listaVac√≠as));
          return pnueva;
     }
     /**
-     * Declara una p·gina como libre para ser reutilizada.
+     * Declara una p√°gina como libre para ser reutilizada.
      * Puede producir ExcepcionFichero.
-     * @param pos DirecciÛn de la p·gina a liberar
+     * @param pos Direcci√≥n de la p√°gina a liberar
      */
-    public void liberarP·gina(int pos) {
+    public void liberarP√°gina(int pos) {
         posicionar(pos);
-        escribirInterno(Conversor.aByte(listaVacÌas));
-        listaVacÌas=pos;
+        escribirInterno(Conversor.aByte(listaVac√≠as));
+        listaVac√≠as=pos;
         posicionarInterno(2*Conversor.INTBYTES);
-        escribirInterno(Conversor.aByte(listaVacÌas));
+        escribirInterno(Conversor.aByte(listaVac√≠as));
     }
     /**
      * Proporciona el valor de un adjunto: Los adjuntos se numeran de 0 a numeroAdjuntos-1.
-     * @param pos N˙mero del adjunto que se desea
+     * @param pos N√∫mero del adjunto que se desea
      * @return Valor actual del adjunto
      */
     public int  adjunto(int pos){
@@ -166,7 +161,7 @@ public class FicheroAyuda {
     }
     /**
      * Modifica el valor de un adjunto: Los adjuntos se numeran de 0 a numeroAdjuntos-1
-     * @param pos N˙mero del adjunto que se desea modificar
+     * @param pos N√∫mero del adjunto que se desea modificar
      * @param valor Nuevo valor del adjunto
      */
     public void adjunto(int pos, int valor){
@@ -175,28 +170,28 @@ public class FicheroAyuda {
         escribirInterno(Conversor.aByte(valor));
     }
     /**
-     * Lee una p·gina del fichero.
+     * Lee una p√°gina del fichero.
      * Puede producir ExcepcionFichero.
-     * @param pos N˙mero de la p·gina a leer
+     * @param pos N√∫mero de la p√°gina a leer
      * @return Contenido de la pagina en bytes
      */
     public byte[] leer(int pos){
         posicionar(pos);
-        return leerInterno(tamaÒoP·gina);
+        return leerInterno(tama√±oP√°gina);
     }
     /**
-     * Escribe una p·gina en el fichero.
+     * Escribe una p√°gina en el fichero.
      * Debe estar reservada previamente.
      * Puede producir ExcepcionFichero.
-     * @param dato Contenido de la p·gina en bytes
-     * @param pos PosiciÛn de la p·gina a escribir
+     * @param dato Contenido de la p√°gina en bytes
+     * @param pos Posici√≥n de la p√°gina a escribir
      */
     public void escribir(byte[] dato, int pos){
-        if(dato.length>tamaÒoP·gina)
+        if(dato.length>tama√±oP√°gina)
             throw new ExcepcionFichero("Intento de almacenar un dato mayor del permitido"); 
         posicionar(pos);
-        if(dato.length < tamaÒoP·gina) {
-            byte[] nuevoDato= new byte[tamaÒoP·gina];
+        if(dato.length < tama√±oP√°gina) {
+            byte[] nuevoDato= new byte[tama√±oP√°gina];
             for(int i=0; i<dato.length; i++)
                 nuevoDato[i]=dato[i];
             dato=nuevoDato;
@@ -204,21 +199,21 @@ public class FicheroAyuda {
         escribirInterno(dato);
     }
     /**
-     * Sit˙a el indicador de posiciÛn en la p·gina indicada.
+     * Sit√∫a el indicador de posici√≥n en la p√°gina indicada.
      * Puede producir ExcepcionFichero.
      * @param pos Registro que se desea leer/escribir
      */
     public void posicionar(int pos) {
-        posicionarInterno(desplazamiento+((long)pos)*tamaÒoP·gina);
+        posicionarInterno(desplazamiento+((long)pos)*tama√±oP√°gina);
     }
     /**
-     * Devuelve el tamaÒo del fichero medido en n˙mero de registros.
+     * Devuelve el tama√±o del fichero medido en n√∫mero de registros.
      * Puede producir ExcepcionFichero.
-     * @return N˙mero de p·ginas del fichero
+     * @return N√∫mero de p√°ginas del fichero
      */
-    public long tamaÒo(){
+    public long tama√±o(){
         try {
-        	return (fichero.length()-desplazamiento)/tamaÒoP·gina;
+        	return (fichero.length()-desplazamiento)/tama√±oP√°gina;
         } catch (IOException e) {
             throw new ExcepcionFichero(e);
         }
@@ -259,7 +254,7 @@ public class FicheroAyuda {
             throw new ExcepcionFichero(e);
         }
     }
-    private long tamaÒoByte() {
+    private long tama√±oByte() {
         try {
             return fichero.length();
         } catch (IOException e) {
