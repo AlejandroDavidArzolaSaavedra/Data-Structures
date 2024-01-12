@@ -1,25 +1,22 @@
 package practica4;
 
-/**
- * @author Juan Carlos Rodríguez, comentado por Jose Pérez
- */
 public class Conversor {
 	/**
-	 * Número de bytes de un int
+	 * NÃºmero de bytes de un int
 	 */
     public static final int INTBYTES=4;
 	/**
-	 * Número de bytes de un float
+	 * NÃºmero de bytes de un float
 	 */
     public static final int FLOATSBYTES=4;
     /**
-     * Obtiene una representación como vector de bytes de un valor int.
+     * Obtiene una representaciÃ³n como vector de bytes de un valor int.
      * @param dato Valor entero
      * @return Vector de bytes que representa al entero
      */
     public static byte[] aByte(int dato){
         byte res[]= new byte[INTBYTES];
-        long datol=dato-(long)Integer.MIN_VALUE; //Pasamos a números positivos
+        long datol=dato-(long)Integer.MIN_VALUE; //Pasamos a nÃºmeros positivos
         for(int i=0; i<INTBYTES; i++){ //Los 4 bytes de un int se toman mediante divisiones
           res[i]=(byte) ((datol%256)+Byte.MIN_VALUE); //Pasamos a con signo para almacenarlo
           datol/=256;
@@ -27,24 +24,24 @@ public class Conversor {
         return res;
     }
     /**
-     * Añade un vector de bytes a otro en el que deben caber.
-     * @param acumulado Vector donde se añaden los elementos
-     * @param datos Vector de elementos a añadir
-     * @param pos Posición de "acumulado" a partir de la cual se añaden los valores de "datos"
-     * @return Número de elementos en "acumulado" tras la adición de los de "datos"
+     * AÃ±ade un vector de bytes a otro en el que deben caber.
+     * @param acumulado Vector donde se aÃ±aden los elementos
+     * @param datos Vector de elementos a aÃ±adir
+     * @param pos PosiciÃ³n de "acumulado" a partir de la cual se aÃ±aden los valores de "datos"
+     * @return NÃºmero de elementos en "acumulado" tras la adiciÃ³n de los de "datos"
      */
-    public static int añade(byte[] acumulado, byte[] datos, int pos) {
+    public static int aÃ±ade(byte[] acumulado, byte[] datos, int pos) {
     	System.arraycopy(datos, 0, acumulado, pos, datos.length);
     	pos+=datos.length;
         //for (int i = 0; i < datos.length; i++) acumulado[pos++] = datos[i];
         return pos;
     }
     /**
-     * Devuelve un subvector de bytes a partir de un vector de Bytes, la posición de comienzo y el tamaño.
+     * Devuelve un subvector de bytes a partir de un vector de Bytes, la posiciÃ³n de comienzo y el tamaÃ±o.
      * @param acumulado Vector de partida
-     * @param pos Posición de comienzo del subverctor
-     * @param lon Tamaño del subvector, se supone pos+lon<acumulado.length
-     * @return El subvector de bytes de "acumulado" que comienza en "pos" y tiene tamaño "lon"
+     * @param pos PosiciÃ³n de comienzo del subverctor
+     * @param lon TamaÃ±o del subvector, se supone pos+lon<acumulado.length
+     * @return El subvector de bytes de "acumulado" que comienza en "pos" y tiene tamaÃ±o "lon"
      */
     public static byte[] toma(byte[] acumulado, int pos, int lon) {
         byte[] res = new byte[lon];
@@ -53,7 +50,7 @@ public class Conversor {
         return res;
     }
     /**
-     * Obtiene una representación como vector de bytes de un valor float.
+     * Obtiene una representaciÃ³n como vector de bytes de un valor float.
      * @param dato Valor entero
      * @return Vector de bytes que representa al entero
      */
@@ -61,18 +58,18 @@ public class Conversor {
         return aByte(Float.floatToRawIntBits(dato));        
     }
     /**
-     * Obtiene una representación como vector de bytes de una String, truncada si supera un límite.
+     * Obtiene una representaciÃ³n como vector de bytes de una String, truncada si supera un lÃ­mite.
      * @param dato Ristra a convertir
-     * @param límite Tamaño máximo de la ristra que se convierte, si la ristra supera "límite" se trunca.
+     * @param lÃ­mite TamaÃ±o mÃ¡ximo de la ristra que se convierte, si la ristra supera "lÃ­mite" se trunca.
      * @return Vector de bytes que representa a la ristra, truncada en su caso
      */
-    public static byte[] aByte(String dato, int límite){
-        if(dato.length()>límite)
-            dato=dato.substring(0,límite-1);
-        byte res[]=new byte[límite];
+    public static byte[] aByte(String dato, int lÃ­mite){
+        if(dato.length()>lÃ­mite)
+            dato=dato.substring(0,lÃ­mite-1);
+        byte res[]=new byte[lÃ­mite];
         do{
             byte aux[]= dato.getBytes();
-            if(aux.length<=límite){
+            if(aux.length<=lÃ­mite){
             	System.arraycopy(aux, 0, res, 0, aux.length);
                 //for(int i=0; i <aux.length; i++) res[i]=aux[i];
                 return res;
