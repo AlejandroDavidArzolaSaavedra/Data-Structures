@@ -14,7 +14,7 @@ public class TestBinarySearch {
 		// 4 bytes int  cada registro  
 	try {
 			
-			fichero = new FileWriter("salida3.txt");
+			fichero = new FileWriter("output3.txt");
 			pw = new PrintWriter(fichero);
 			r = new RandomAccessFile("datos.dat","rw");
 			r2 = new RandomAccessFile("datos_no.dat","rw");
