@@ -1,7 +1,7 @@
 <h1 align="center">Development of a Container with a B-Tree</h1>
 
 <p align="center">
-  <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/4d93cd90-dcb9-48cc-ab25-9650ea0c2dc9"/>
+  <img width="500px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/6a265034-3432-40d5-bf09-a7391f882ff5"/>
 </p>
 
 This assignment focused on developing a container in Java using a B-tree.
