@@ -1,7 +1,7 @@
 <h1 align="center">Development of a Linear Container with an Ordered Vector</h1>
 
 <p align="center">
-  <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/aac444fe-27af-4e95-a183-7269514b708c"/>
+  <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/b1a20f26-3833-4709-8392-65857ff217ea"/>
 </p>
 
 This assignment focused on developing a linear container in Java using an ordered vector as its internal representation. The container performed searches using a binary search approach.
