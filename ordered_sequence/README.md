@@ -4,11 +4,11 @@
   <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/aac444fe-27af-4e95-a183-7269514b708c"/>
 </p>
 
-This assignment focuses on developing a linear container in Java using an ordered vector as its internal representation. The container performs searches using a binary search approach.
+This assignment focused on developing a linear container in Java using an ordered vector as its internal representation. The container performed searches using a binary search approach.
 
 ## Objectives 🎯
 
-1. Create the "IntegerContainer" class with the following operations:
+1. Created the "IntegerContainer" class with the following operations:
    - Constructor with an integer parameter to create empty containers with a maximum size defined by the parameter.
    - "cardinal" function to get the number of elements in the container.
    - "insert" function to add elements to the container.
@@ -17,25 +17,25 @@ This assignment focuses on developing a linear container in Java using an ordere
    - "empty" procedure to leave the container without elements.
    - "elements" function to get an array of integers with the elements of the container ordered from lowest to highest.
 
-2. Implement the internal structure of the container using an ordered vector. Perform binary searches for element retrieval.
+2. Implemented the internal structure of the container using an ordered vector. Performed binary searches for element retrieval.
 
 ## Required Files 📄
 
 - IntegerContainer.java
 - TestContainer.java
-- output2.txt (download from the provided link)
+- output2.txt (downloaded from the provided link)
 
 ## Testing Instructions 🧪
 
-1. Develop the `TestContainer` class with a main program that checks the correct functioning of all operations of `IntegerContainer`, without using JUnit.
+1. Developed the `TestContainer` class with a main program that checked the correct functioning of all operations of `IntegerContainer`, without using JUnit.
 
-2. Perform performance tests using the files `data.dat` and `data_no.dat`:
+2. Performed performance tests using the files `data.dat` and `data_no.dat`:
    - Insertions and extractions of elements.
    - Successful and unsuccessful searches.
 
 ## Final Report 📊
 
-Prepare a report that includes:
+Prepared a report that included:
 
 1. Graph of the average insertion time in the increasing phase.
 2. Graph of the average extraction time in the decreasing phase.
@@ -44,4 +44,4 @@ Prepare a report that includes:
 5. Comparison between insertion and extraction times.
 6. Comparison between times of successful and unsuccessful searches.
 
-Each graph should be accompanied by a justification and analysis of possible causes of the observed behavior.
+Each graph was accompanied by a justification and analysis of possible causes of the observed behavior.
