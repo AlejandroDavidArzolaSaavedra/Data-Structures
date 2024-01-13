@@ -31,16 +31,4 @@ This assignment aims to develop a linear container in Java using a linked list i
 2. Perform performance tests using the files `data.dat` and `data_no.dat`:
    - Insertions and extractions of elements.
    - Successful and unsuccessful searches.
-
-## Final Report 📊
-
-Prepare a report that includes:
-
-1. Graph of the average insertion time in the increasing phase.
-2. Graph of the average extraction time in the decreasing phase.
-3. Graph of the average successful search time for different sizes of the structure.
-4. Graph of the average unsuccessful search time for different sizes of the structure.
-5. Comparison between insertion and extraction times.
-6. Comparison between times of successful and unsuccessful searches.
-
-Each graph should be accompanied by a justification and analysis of possible causes of the observed behavior.
+     
