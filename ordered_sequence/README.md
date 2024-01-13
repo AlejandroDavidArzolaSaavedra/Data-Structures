@@ -32,16 +32,3 @@ This assignment focused on developing a linear container in Java using an ordere
 2. Performed performance tests using the files `data.dat` and `data_no.dat`:
    - Insertions and extractions of elements.
    - Successful and unsuccessful searches.
-
-## Final Report 📊
-
-Prepared a report that included:
-
-1. Graph of the average insertion time in the increasing phase.
-2. Graph of the average extraction time in the decreasing phase.
-3. Graph of the average successful search time for different sizes of the structure.
-4. Graph of the average unsuccessful search time for different sizes of the structure.
-5. Comparison between insertion and extraction times.
-6. Comparison between times of successful and unsuccessful searches.
-
-Each graph was accompanied by a justification and analysis of possible causes of the observed behavior.
