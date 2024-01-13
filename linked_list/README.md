@@ -7,7 +7,7 @@ This assignment aims to develop a linear container in Java using a linked list i
 
 ## Objectives 🎯
 
-1. Create the following operations:
+1. Created the following operations:
    - Default constructor to create empty containers.
    - "cardinal" function to get the number of elements in the container.
    - "insert" function to add elements to the container.
