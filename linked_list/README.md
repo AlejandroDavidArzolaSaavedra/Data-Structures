@@ -1,8 +1,9 @@
 <h1 align="center">Development of a Linear Container with Linked List</h1>
 <p align="center">
-  <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/3970d8e0-4a1d-4840-a68b-a38432ebf8f4"/>
+  <img width="500px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/21b0fa97-7fb4-4e54-a2e7-b6757598cce5"/>
 </p>
 This assignment aims to develop a linear container in Java using a linked list in dynamic memory. The container, represented by the class "IntegerContainer" in the "assignment1" package, does not require sorting and does not allow repeated elements.
+
 
 ## Objectives 🎯
 
