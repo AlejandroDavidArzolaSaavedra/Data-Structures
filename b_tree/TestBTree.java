@@ -23,7 +23,7 @@ public class TestBTree {
 		// Cargamos el contenido de datos.dat y datos_no.dat
 		try {
 			// 4 bytes int  cada registro  	
-			fichero = new FileWriter("salida4.txt");
+			fichero = new FileWriter("output4.txt");
 			pw = new PrintWriter(fichero);
 			r = new RandomAccessFile("datos.dat","rw");
 			r2 = new RandomAccessFile("datos_no.dat","rw");
