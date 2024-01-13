@@ -4,7 +4,7 @@
   <img width="500px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/227aa6db-2b23-452b-beee-be682fecd6df"/>
 </p>
 
-This assignment focuses on developing a container in Java using a binary search tree.
+This assignment focused on developing a container in Java using a binary search tree.
 
 ## Objectives 🎯
 
@@ -20,12 +20,12 @@ Developed the following operations:
 
 ## Implementation 🛠️
 
-Implement the container using a binary search tree in dynamic memory without rebalancing operations.
+Implemented the container using a binary search tree in dynamic memory without rebalancing operations.
 
 ## Testing Instructions 🧪
 
-1. Develop the `TestContainer` class with a main program that checks the correct functioning of all operations of `IntegerContainer`, without using JUnit.
+1. Developed the `TestContainer` class with a main program that checked the correct functioning of all operations of `IntegerContainer`, without using JUnit.
 
-2. Perform performance tests using the files `data.dat` and `data_no.dat`:
+2. Performed performance tests using the files `data.dat` and `data_no.dat`:
    - Insertions and extractions of elements.
    - Successful and unsuccessful searches.
