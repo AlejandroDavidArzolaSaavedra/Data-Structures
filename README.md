@@ -1,9 +1,10 @@
 
 <h1 align="center">Structured Data and Programming Assignments💻</h1>
 <p align="center">
-  <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/beb65f8e-9cca-4ee6-a2ac-da2afd63a3a5">
+  <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/1642c491-d7bc-4fdb-ac29-f42f3287b72c">
 </p>
 This project provides an overview of four programming assignments related to structured data and programming.
+
 
 ## Assignment 1: Linked List Container 📝
 
