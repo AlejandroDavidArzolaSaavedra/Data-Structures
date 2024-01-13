@@ -14,7 +14,7 @@ public class TestOrderedSequence {
 		// 4 bytes int  cada registro  
 		try {
 			
-			fichero = new FileWriter("salida2.txt");
+			fichero = new FileWriter("output2.txt");
 			pw = new PrintWriter(fichero);
 			r = new RandomAccessFile("datos.dat","rw");
 			r2 = new RandomAccessFile("datos_no.dat","rw");
