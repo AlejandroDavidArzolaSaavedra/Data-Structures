@@ -16,7 +16,7 @@ public class TestLinkedList {
 		// 4 bytes int  cada registro  
 		try {
 			
-			fichero = new FileWriter("salida1.txt");
+			fichero = new FileWriter("output1.txt");
 			pw = new PrintWriter(fichero);
 			r = new RandomAccessFile("datos.dat","rw");
 			r2 = new RandomAccessFile("datos_no.dat","rw");
