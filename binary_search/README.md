@@ -8,7 +8,7 @@ This assignment focuses on developing a container in Java using a binary search 
 
 ## Objectives 🎯
 
-Develop the following operations:
+Developed the following operations:
 
 1. Default constructor to create empty containers.
 2. "cardinal" function to get the number of elements in the container.
