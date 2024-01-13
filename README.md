@@ -1,7 +1,7 @@
 
 <h1 align="center">Structured Data and Programming Assignments💻</h1>
 <p align="center">
-  <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/1642c491-d7bc-4fdb-ac29-f42f3287b72c">
+  <img width="500px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/1642c491-d7bc-4fdb-ac29-f42f3287b72c">
 </p>
 This project provides an overview of four programming assignments related to structured data and programming.
 
