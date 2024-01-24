@@ -5,7 +5,7 @@
 This project provided an overview of four programming assignments related to structured data and programming.
 
 
-## Assignment 1: Linked List Container 📝
+## Linked List Container 📝
 
 **Objective:** Developed a container class, `LinkedList`, to represent a collection of integers using a singly linked list.
 
@@ -13,7 +13,7 @@ This project provided an overview of four programming assignments related to str
 
 **Testing:** Performed tests to ensure the correct functioning of the container without using JUnit.
 
-## Assignment 2: Binary Search Tree Container 📚
+## Binary Search Tree Container 📚
 
 **Objective:** Developed a container class, `BinarySearchTree`, to represent a collection of integers using a binary search tree.
 
@@ -21,7 +21,7 @@ This project provided an overview of four programming assignments related to str
 
 **Testing:** Developed a test class, `TestBinarySearchTree`, to check the correct functioning of the container without using JUnit. Conducted performance tests with specific requirements.
 
-## Assignment 3: Binary Search Tree Container (Advanced)🔄
+## Binary Search Tree Container (Advanced)🔄
 
 **Objective:** Extended the binary search tree container developed in Assignment 2. Focused on optimizing performance and conducting detailed performance tests.
 
@@ -29,7 +29,7 @@ This project provided an overview of four programming assignments related to str
 
 **Testing:** Developed a test class, `TestBinarySearch`, to evaluate the container's performance and behavior under different scenarios. Performed detailed experiments and recorded results in an output file.
 
-## Assignment 4: B-Tree Container 🌳
+## B-Tree Container 🌳
 
 **Objective:** Developed a container class, `BTree`, to represent a collection of integers using a B-tree.
 
