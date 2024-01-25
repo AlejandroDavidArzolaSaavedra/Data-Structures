@@ -5,7 +5,9 @@ En la carpeta doc tenemos un informe que proporciona una breve descripción de l
 ## Lista Encadenada 🧐
 
 Al observar las gráficas, se destaca que la inserción en una lista encadenada es la más lenta. Esto se debe a que las búsquedas del elemento a insertar se realizan de manera secuencial, comparando valor a valor. Este enfoque lineal resulta en un mayor tiempo de ejecución, especialmente a medida que aumenta el tamaño del contenedor.
-
+<p align="center">
+  <img width="600px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/9817aff4-f28a-44cf-ba30-ab53dfca5b53">
+</p>
 ## Vector Ordenado 🚀
 
 En el caso del vector ordenado, se experimenta una reducción significativa en el tiempo de inserción. Esto se debe a que las búsquedas se realizan de manera dicotómica, lo que implica una búsqueda más eficiente al tratar menos elementos para encontrar el valor deseado. Sin embargo, es importante tener en cuenta que este contenedor requiere que los datos estén ordenados, lo que puede ser un inconveniente.
