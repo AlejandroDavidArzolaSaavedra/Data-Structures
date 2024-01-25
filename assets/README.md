@@ -13,6 +13,10 @@ Al observar las gráficas, se destaca que la inserción en una lista encadenada 
 
 En el caso del vector ordenado, se experimenta una reducción significativa en el tiempo de inserción. Esto se debe a que las búsquedas se realizan de manera dicotómica, lo que implica una búsqueda más eficiente al tratar menos elementos para encontrar el valor deseado. Sin embargo, es importante tener en cuenta que este contenedor requiere que los datos estén ordenados, lo que puede ser un inconveniente.
 
+<p align="center">
+  <img width="600px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/5ea5d77b-65b1-4c62-afd5-3457c1836dce">
+</p>
+
 ## Árbol Binario de Búsqueda 🌳
 
 La inserción en un árbol binario de búsqueda muestra tiempos considerablemente más bajos en comparación con la práctica anterior. La eficiencia se debe a que no es necesario realizar desplazamientos de elementos, lo que resulta en un menor gasto computacional. Sin embargo, es importante tener precaución, ya que la falta de operaciones de reequilibrado puede llevar a que el árbol se degrade a una estructura similar a la lista encadenada si no se gestiona adecuadamente.
