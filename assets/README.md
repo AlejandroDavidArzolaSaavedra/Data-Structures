@@ -25,6 +25,10 @@ La inserción en un árbol binario de búsqueda muestra tiempos considerablement
   <img width="300px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/4b3ee775-ef5a-45b7-a58a-5b27b40049bde">
 </p>
 
+## Árbol B 🌳⚖️​
+
+La inserción en un árbol B muestra tiempos considerablemente más bajos en comparación con las prácticas anteriores. La eficiencia se debe a la estructura balanceada del árbol B, que permite una búsqueda y una inserción eficientes. La propiedad de equilibrio ayuda a mantener el rendimiento incluso a medida que se agregan y eliminan elementos. La estructura jerárquica del árbol B facilita la búsqueda y la inserción de elementos, lo que resulta en tiempos de ejecución optimizados.
+
 ## Gráficas 📈
 
 Se adjuntan gráficas que representan el tiempo de ejecución en milisegundos para cada mil operaciones de inserción en función del tamaño del contenedor. Se incluyen comparativas entre las prácticas anteriores (PRCT 1 y PRCT 2) y las estructuras de datos utilizadas (PRCT 2, PRCT 3 y PRCT 4).
