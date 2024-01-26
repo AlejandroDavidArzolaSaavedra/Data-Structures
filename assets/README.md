@@ -5,6 +5,7 @@ En la carpeta doc tenemos un informe que proporciona una breve descripción de l
 ## Lista Encadenada 🧐
 
 Al observar las gráficas, se destaca que la inserción en una lista encadenada es la más lenta. Esto se debe a que las búsquedas del elemento a insertar se realizan de manera secuencial, comparando valor a valor. Este enfoque lineal resulta en un mayor tiempo de ejecución, especialmente a medida que aumenta el tamaño del contenedor.
+
 <p align="center">
   <img width="600px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/9817aff4-f28a-44cf-ba30-ab53dfca5b53">
 </p>
@@ -28,6 +29,10 @@ La inserción en un árbol binario de búsqueda muestra tiempos considerablement
 ## Árbol B 🌳⚖️​
 
 La inserción en un árbol B muestra tiempos considerablemente más bajos en comparación con las prácticas anteriores. La eficiencia se debe a la estructura balanceada del árbol B, que permite una búsqueda y una inserción eficientes. La propiedad de equilibrio ayuda a mantener el rendimiento incluso a medida que se agregan y eliminan elementos. La estructura jerárquica del árbol B facilita la búsqueda y la inserción de elementos, lo que resulta en tiempos de ejecución optimizados.
+
+<p align="center">
+  <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/4406207d-c62e-4f5a-ab20-af5457a2e36c">
+</p>
 
 ## Gráficas 📈
 
