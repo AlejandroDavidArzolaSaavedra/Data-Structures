@@ -21,6 +21,10 @@ En el caso del vector ordenado, se experimenta una reducción significativa en e
 
 La inserción en un árbol binario de búsqueda muestra tiempos considerablemente más bajos en comparación con la práctica anterior. La eficiencia se debe a que no es necesario realizar desplazamientos de elementos, lo que resulta en un menor gasto computacional. Sin embargo, es importante tener precaución, ya que la falta de operaciones de reequilibrado puede llevar a que el árbol se degrade a una estructura similar a la lista encadenada si no se gestiona adecuadamente.
 
+<p align="center">
+  <img width="300px" src="https://github.com/AlejandroDavidArzolaSaavedra/Data-Structures/assets/90756437/4b3ee775-ef5a-45b7-a58a-5b27b40049bde">
+</p>
+
 ## Gráficas 📈
 
 Se adjuntan gráficas que representan el tiempo de ejecución en milisegundos para cada mil operaciones de inserción en función del tamaño del contenedor. Se incluyen comparativas entre las prácticas anteriores (PRCT 1 y PRCT 2) y las estructuras de datos utilizadas (PRCT 2, PRCT 3 y PRCT 4).
