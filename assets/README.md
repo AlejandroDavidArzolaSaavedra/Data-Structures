@@ -1,6 +1,6 @@
 # Comparison of Insertions in Data Structures 📊📉
 
-In the "doc" folder, there is a report that provides a brief description of observations and conclusions obtained from analyzing insertions in different data structures: linked list, sorted vector, binary search tree, and B-tree.
+In the "doc" folder, there is report that provides a brief description in Spanish of observations and conclusions obtained from analyzing insertions in different data structures: linked list, sorted vector, binary search tree, and B-tree.
 
 ## Linked List 🧐
 
